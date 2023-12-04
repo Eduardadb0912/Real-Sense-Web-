@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Dívidas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a><img src="../src/Real_bg.png" class="img1"></a>
+      <a class="logo" href="pag_inicial.html">Real Sense Web</a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="financas.html">Educação</a></li>
+        <li><a href="registro.php">Registro Contas</a></li>
+        <li><a href="planejamento.html">Orçamento</a></li>
+        <li><a href="rastreamento.html">Gastos</a></li>
+        <li><a href="gestao.html">Gestão de dividas</a></li>
+        <li><a href="financias.html">Calculadoras</a></li>
+        <li><a href="login.php">Perfil</a></li>
+        
+      </ul>
+     
+    </nav>
+  </header>
+    <div class="container">
+        <h1>Gestão de Dívidas</h1>
+        <div id="dividas">
+            <h2>Dívidas</h2>
+            <input type="text" id="nomeDivida" placeholder="Nome da Dívida">
+            <input type="number" id="valorDivida" placeholder="Valor da Dívida">
+            <button id="addDivida" style="width:21%;">Adicionar Dívida</button>
+            <h2>Lista de Dívidas</h2>
+            <table id="tabelaDividas">
+                <tr>
+                    <th>Nome da Dívida</th>
+                    <th>Valor</th>
+                    <th>Ações</th>
+                </tr>
+            </table>
+        </div>
+        <!-- Restante do código omitido por brevidade -->
+    </div>
+    <script src="../src/script.js"></script>
+</body>
+</html>

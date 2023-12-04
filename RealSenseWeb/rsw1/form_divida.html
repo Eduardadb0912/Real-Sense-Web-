@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/form_divida.css">
+    <title>Gestão de dívidas</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="../src/Real_bg.png"></a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="form_gasto.php">Cadastrar gasto</a></li>
+            <li><a href="form_objetivo.html">Cadastrar objetivo</a></li>
+            <li><a href="form_divida.html">Cadastrar Divida</a></li>
+            <li><a href="visualizar_divida.php">Vizualizar Dividas</a></li>
+            <li><a href="visualizar_deposito_objetivo.php">Vizualizar Deposito Objetivo</a></li>
+            <li><a href="visualizar_objetivo.php">Vizualizar Objetivo</a></li>
+            <li><a href="visualizar_gasto.php">Vizualizar Gastos</a></li>
+        </ul>
+    </header>
+    <center>
+    </br>
+</br>
+        <h1>GESTÃO DE DÍVIDAS</h1>
+        <form method="POST" action="cadastrar_divida.php">
+            <table>
+                <tr>
+                    <td>Nome da dívida: <input type="text" name="nome_divida"></td>
+                    <td>Valor: <input type="number" name="valor"></td>
+                </tr>  
+
+            </table>
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Limpar">
+
+        </form>
+    </center>
+</body>
+</html>

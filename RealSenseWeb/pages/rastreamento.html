@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visão Geral</title>
+    <link rel="stylesheet" href="">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a><img src="../src/Real_bg.png" class="img1"></a>
+      <a class="logo" href="pag_inicial.html">Real Sense Web</a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="financas.html">Educação</a></li>
+        <li><a href="registro.php">Registro Contas</a></li>
+        <li><a href="planejamento.html">Orçamento</a></li>
+        <li><a href="rastreamento.html">Gastos</a></li>
+        <li><a href="gestao.html">Gestão de dividas</a></li>
+        <li><a href="financias.html">Calculadoras</a></li>
+        <li><a href="login.php">Perfil</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+    <div class="container">
+      <main>
+        <div class="divMonth">
+          <label for="month">Mês</label>
+          <select id="month">
+            <option value="1">Janeiro</option>
+            <option value="2">Fevereiro</option>
+            <option value="3">Março</option>
+            <option value="4">Abril</option>
+            <option value="5">Maio</option>
+            <option value="6">Junho</option>
+            <option value="7">Julho</option>
+            <option value="8">Agosto</option>
+            <option value="9">Setembro</option>
+            <option value="10">Outubro</option>
+            <option value="11">Novembro</option>
+            <option value="12">Dezembro</option>
+          </select>
+        </div>
+        <div class="resume">
+          <div>
+            Receitas: R$
+            <span class="incomes">0.00</span>
+          </div>
+          <div>
+            Despesas: R$
+            <span class="expenses">0.00</span>
+          </div>
+          <div>
+            Total: R$
+            <span class="total">0.00</span>
+          </div>
+        </div>
+        <div class="newItem">
+          <div class="divDesc">
+            <label for="desc">Descrição</label>
+            <input type="text" id="desc" />
+          </div>
+          <div class="divAmount">
+            <label for="amount">Valor</label>
+            <input type="number" id="amount" />
+          </div>
+          <div class="divCategory">
+            <label for="Categ">Categoria</label>
+            <select id="Categ">
+              <option>Salário</option>
+              <option>Comissão</option>
+              <option>Pagamentos</option>
+              <option>Rendimentos</option>
+              <option>Comissão</option>
+              <option>Serviços</option>
+              <option>Vendas</option>
+              <option>----------------</option>
+              <option>Veículo</option>
+              <option>Alimentaçao</option>
+              <option>Educação</option>
+              <option>Lazer</option>
+              <option>Moradia</option>
+              <option>Saúde</option>
+              <option>Transporte</option>
+              <option>Outros</option>
+            </select>
+          </div>
+          <div class="divType">
+            <label for="type">Tipo</label>
+            <select id="type">
+              <option>Receita</option>
+              <option>Despesa</option>
+            </select>
+          </div>
+          <div class="botao">
+            <button id="btnNew">Incluir</button>
+          </div>
+        </div>      
+        <div class="divTable">
+          <table>
+            <thead>
+              <tr>
+                <th>Descrição</th>
+                <th class="columnAmount">Valor</th>
+                <th class="columnCateg">Categoria</th>
+                <th class="columnType">Tipo</th>
+                <th class="columnAction"></th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  
+
+ 
+  <script src="../src/script.js"></script>
+</body>
+</html>

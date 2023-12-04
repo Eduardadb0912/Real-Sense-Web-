@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento e Planejamento</title>
+    <link rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600" rel="stylesheet">
+</head>
+<body class="body">
+
+  <header>
+    <nav>
+      <a><img src="../src/Real_bg.png" class="img1"></a>
+      <a class="logo" href="pag_inicial.html">Real Sense Web</a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="financias-art.html">Educação</a></li>
+        <li><a href="registro.php">Registro Contas</a></li>
+        <li><a href="plan.html">Orçamento</a></li>
+        <li><a href="rastreamento.html">Gastos</a></li>
+        <li><a href="gestao.html">Gestão de dividas</a></li>
+        <li><a href="financias.html">Calculadoras</a></li>
+        <li><a href="login.php">Perfil</a></li>
+        
+      </ul>
+     
+    </nav>
+  </header>
+
+  <div class="container">
+    <main>
+      <div class="budget-planning">
+        <h2 style="font-family: 'Poppins', sans-serif;">Orçamento e Planejamento</h2>
+        <div class="planning-item">
+          <label for="goal">O que deseja adquirir ou onde deseja viajar?</label>
+          <input type="text" id="goal" placeholder="Digite aqui seu objetivo">
+        </div>
+        <div class="planning-item">
+          <label for="amount">Valor necessário para o planejamento (R$)</label>
+          <input type="number" id="amount" placeholder="Digite o valor">
+        </div>
+        <button id="btnPlan">Adicionar ao Planejamento</button>
+      </div>
+
+      <div class="planning-item">
+        <label for="depositAmount">Depósito (R$)</label>
+        <input type="number" id="depositAmount" placeholder="Digite o valor para depósito">
+        <button id="btnDeposit">Depositar</button>
+      </div>
+
+      <div class="balance-section" style="font-family: 'Poppins', sans-serif;">
+        <h2>Valor do Planejamento: <span id="valorPlanejamento">0</span> R$</h2>
+        <h2>Total de Depósitos: <span id="totalDeposits">0</span> R$</h2>
+        <h2>Saldo Total: <span id="totalBalance">0</span> R$</h2>
+        <h2>Dinheiro Faltante para o Planejamento: <span id="faltaPlanejamento">0</span> R$</h2>
+      </div>
+    </main>
+  </div>
+
+  <script src="../src/script.js"></script>
+</body>
+</html>

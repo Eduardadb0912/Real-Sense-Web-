@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form_objetivo.css">
+    <title>Objetivo</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="../src/Real_bg.png"></a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="form_gasto.php">Cadastrar gasto</a></li>
+            <li><a href="form_objetivo.html">Cadastrar objetivo</a></li>
+            <li><a href="form_divida.html">Cadastrar Divida</a></li>
+            <li><a href="visualizar_divida.php">Vizualizar Dividas</a></li>
+            <li><a href="visualizar_deposito_objetivo.php">Vizualizar Deposito Objetivo</a></li>
+            <li><a href="visualizar_objetivo.php">Vizualizar Objetivo</a></li>
+            <li><a href="visualizar_gasto.php">Vizualizar Gastos</a></li>
+        </ul>
+    </header>
+    <center>
+</br>
+</br>
+</br>
+</br>
+        <h1>PLANEJAMENTO</h1>
+        <form method="POST" action="cadastra_objetivo.php">
+            <table>
+                <tr>
+                    <td>DESCRIÇÃO OBJETIVO: <input type="text" name="descricao_objetivo"></td>
+                    <td>VALOR NECESSÁRIO: <input type="number" name="valor_objetivo"></td>
+                </tr>
+            </table>
+        </br>
+    </br>
+            <td>DATA PREVISTA DO OBJETIVO: <input type="date" name="data_prevista_objetivo"></td>
+        </br>
+    </br>
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Limpar">
+        </form>
+    </center>
+    <center>
+    </br>
+</br>
+            <h1>DEPÓSITO</h1>
+            <form method="POST" action="deposito_objetivo.php">
+                <table>
+                    <tr>
+                        <td>VALOR DEPÓSITO: <input type="number" name="valor_deposito"></td>
+                    </tr>
+                </table>
+            </br>
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="Limpar">
+                <a href="rsw_index.html"><input type="button" value="Voltar"></a>
+
+            </form>
+        </center>
+
+
+    
+</body>
+</html>

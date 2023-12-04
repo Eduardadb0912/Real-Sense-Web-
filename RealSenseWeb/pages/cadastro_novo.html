@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div class="fundo">
+        <div class="container">
+            <div class="form">
+                <form action="cadastrar.php" method="POST">
+                    <div class="form-header">
+                        <div class="title">
+                            <h1>Cadastre-se</h1>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label for="nome" class="labelInput">Nome</label>
+                            <input type="text" name="nome" placeholder="Digite seu nome" class="inputUser" required>
+                            
+                        </div>
+
+                        <div class="input-box">
+                            <label for="cpf">CPF</label>
+                            <input type="number" name="cpf" placeholder="Digite seu cpf " required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" placeholder="Digite seu e-mail" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="password">Senha</label>
+                            <input type="text" name="senha" placeholder="Digite sua senha" required>
+                        </div>
+                    </div>
+
+                    <div class="continue-button">
+                        <input class="continue-button" type="submit" name="submit" value="Cadastrar">
+                        <a href="login.php"><input class="continue-button" value="Ir para a tela de Login"></input></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>

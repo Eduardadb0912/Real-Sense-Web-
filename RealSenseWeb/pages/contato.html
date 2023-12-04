@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contato.css">
+    <title>Formulário</title>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo"><img src="../src/Real_bg.png"></a>
+
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar">
+      <li><a href="pag_inicial.html">Inicio</a></li>
+      <li><a href="sobre.html">Quem somos</a></li>
+      <li><a href="utilidades.html">Serviços</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+    <div class="header-btn">
+      <a href="cadastro_novo.html" class="cadastre-se">Cadastre-se</a>
+      <a href="login.php" class="entrar">Entrar</a>
+    </div>
+  </header>
+  </br>
+</br>
+</br>
+    <section>
+      
+        <form action="contato.php" method="POST">
+            <label>Nome</label>
+            <input type="text" name="nome" placeholder="Digite seu nome" autocomplete="off" required>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+            <label>Mensagem</label>
+            <textarea name="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+            <button type="submit">Enviar </button>
+        </form>
+    </section>
+
+    <footer class="footer_pag">
+      <p>&copy; 2023 - Todos os direitos reservados</p>
+      <p>Entre em contato pelo e-mail: RealSenseWeb@sense.org</p>
+      <nav>
+        <ul>
+          <li><a href="#">Termos de uso</a></li>
+          <li><a href="#">Política de privacidade</a></li>
+          <li><a href="#">Sobre nós</a></li>
+        </ul>
+      </nav>
+    </footer> 
+</body>
+</html>
+<script src="../src/mobile-navbar.js"></script>

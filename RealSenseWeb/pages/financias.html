@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Juros</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <header>
+        <nav>
+          <a><img src="../src/Real_bg.png" class="img1"></a>
+          <a class="logo" href="pag_inicial.html">Real Sense Web</a>
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="financas.html">Educação</a></li>
+            <li><a href="registro.php">Registro Contas</a></li>
+            <li><a href="planejamento.html">Orçamento</a></li>
+            <li><a href="gestao.html">Gastos</a></li>
+            <li><a href="gestao.html">Gestão de dividas</a></li>
+            <li><a href="financias.html">Calculadoras</a></li>
+            <li><a href="login.php">Perfil</a></li>
+            
+          </ul>
+        
+        </nav>
+      </header>
+    <main id="container">
+        <div id="calculator">
+            <h2>
+                REAL SENSE WEB-INVESTIMENTO
+            </h2>
+
+            <div id="input-box">
+                <div class="input-field">
+                    <label for="value">Valor inicial:</label>
+                    <input type="number" id="value">
+                </div>
+                
+                <div class="input-field">
+                    <label for="time">Tempo de rendimento a.m (meses):</label>
+                    <input type="number" id="time">
+                </div>
+                <div class="input-field">
+                    <label for="jurosInput">Juros (% a.m):</label>
+                    <input type="number" id="jurosInput">
+                </div>
+            </div>
+            <div id="result">
+                <h4>Valor Inicial:</h4>
+                <span class="result" id="valorinicial">
+                    R$ 0,00
+                </span> 
+                <h4>Meses:</h4>
+                <span class="result" id="meses">
+                    00
+                </span> 
+                <h4>Juros:</h4>
+                <span class="result" id="jurosResultado">
+                    R$ 0,00
+                </span>
+                <h4>Valor total:</h4>
+                <span class="result" id="valortotal">
+                    R$ 0,00
+                </span>
+            </div>          
+            <button id="calculate"> 
+                Calcular 
+            </button>
+        </div>
+    </main>
+    <script src="../src/script.js"></script>
+</body>
+</html>
